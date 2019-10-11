@@ -1,6 +1,6 @@
 package domain;
 
-public class Casa extends Inmueble {
+public class Local extends Inmueble {
     private double valor;
 
     public void setValor(double nuevoValor){
@@ -20,4 +20,7 @@ public class Casa extends Inmueble {
     public double getValorNeto() {
         return this.calcularValorInmueble() + this.plus();
     }
+
+    @Override
+    public void vender(double comision) {    }
 }

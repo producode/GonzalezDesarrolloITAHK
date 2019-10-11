@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.Date;
+
 public class Inmueble {
     private double metrosCuadrados;
     private int cantidadAmbientes;
@@ -9,8 +11,20 @@ public class Inmueble {
     public double plus(){
         return this.Zona.getPlus();
     }
-    public void cambiarOperacion(Operacion unaOperacion){
+    private void cambiarOperacion(Operacion unaOperacion){
         this.operacion = unaOperacion;
+    }
+    public void vender(double comision){
+        Venta nuevaOperacion = new Venta();
+        nuevaOperacion.inicializarOperacion();
+        nuevaOperacion.setComision(comision);
+        this.cambiarOperacion(nuevaOperacion);
+    }
+    public void alquilar(int meses){
+        Alquiler nuevaOperacion = new Alquiler();
+        nuevaOperacion.inicializarOperacion();
+        nuevaOperacion.setMeses(meses);
+        this.cambiarOperacion(nuevaOperacion);
     }
     public double calcularValorInmueble(){
         return 0;
@@ -23,10 +37,35 @@ public class Inmueble {
         this.cantidadAmbientes = CantidadAmbientes;
         this.Zona = nuevaZona;
     }
+
+    public int getCantidadAmbientes() {
+        return cantidadAmbientes;
+    }
+
+    public double getMetrosCuadrados() {
+        return metrosCuadrados;
+    }
+
     public void cambiarReservar(Cliente unCliente, Empleado unEmpleado){
         this.operacion.reservarse(unCliente, unEmpleado, this);
     }
     public void cambiarConcretar(Cliente unCliente, Empleado unEmpleado){
         this.operacion.concretarse(unCliente, unEmpleado, this);
+    }
+
+    public double getComision(){
+        return this.operacion.calcularComision(this);
+    }
+
+    public Date FechaCambioDeEstado(){
+        return this.operacion.getFechaDeCambioDeEstado();
+    }
+
+    public zona getZona(){
+        return this.Zona;
+    }
+
+    public boolean hayProblemasEntreEmpleados(){
+        return this.operacion.problemasEntreEmpleados();
     }
 }

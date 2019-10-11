@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48aa047d-8223-4fe6-a095-41e2f25b86ec" name="Default Changelist" comment="" />
+    <list default="true" id="48aa047d-8223-4fe6-a095-41e2f25b86ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Galpon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Local.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/domain/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Alquiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Casa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Concretado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Concretado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Departamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Departamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/EstadoOperacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/EstadoOperacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Inmueble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Inmueble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/NoReservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/NoReservado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Operacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Operacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/PH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/PH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Reservado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Reservado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Venta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Venta.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,12 +29,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Rk9tys67cVCnHldFUIj8L517E6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -32,6 +54,45 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JUnit.Tests">
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="forSale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="domain" />
+      <option name="MAIN_CLASS_NAME" value="domain.Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.hayProblemas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="forSale" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="domain" />
+      <option name="MAIN_CLASS_NAME" value="domain.Tests" />
+      <option name="METHOD_NAME" value="hayProblemas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Tests" />
+        <item itemvalue="JUnit.Tests.hayProblemas" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -44,5 +105,50 @@
       <updated>1570200447229</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/domain/Empleado.java</url>
+          <line>61</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/domain/Empleado.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/domain/Empleado.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/domain/Empleado.java</url>
+          <line>58</line>
+          <properties class="domain.Empleado" method="cerrasteOperacionesEnLaMismaZona">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

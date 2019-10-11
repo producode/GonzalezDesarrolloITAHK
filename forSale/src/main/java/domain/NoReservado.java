@@ -10,11 +10,12 @@ public class NoReservado implements EstadoOperacion{
     }
 
     @Override
-    public void concretar(Cliente unCliente, Empleado unEmpleado, Operacion miOperacion) {
+    public void concretar(Cliente unCliente, Empleado unEmpleado, Operacion miOperacion, Inmueble unInmueble) {
         Concretado nuevaCompra = new Concretado();
         nuevaCompra.setClienteConcreto(unCliente);
         miOperacion.setEstado(nuevaCompra);
         miOperacion.setEmpleadoConcretante(unEmpleado);
+        unEmpleado.agregarRegistro(unInmueble);
     }
 
     @Override

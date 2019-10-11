@@ -9,7 +9,7 @@ public class Concretado implements EstadoOperacion{
     }
 
     @Override
-    public void concretar(Cliente unCliente, Empleado unEmpleado, Operacion miOperacion) {
+    public void concretar(Cliente unCliente, Empleado unEmpleado, Operacion miOperacion, Inmueble unInmueble) {
 
     }
 
