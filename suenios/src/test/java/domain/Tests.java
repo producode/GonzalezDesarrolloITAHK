@@ -44,16 +44,12 @@ public class Tests {
         sueniosLista.add(nuevoSuenio3);
     }
 
-    @Test
+    @Test(expected = NoPuedeRecibirException.class)
     public void cumplirSuenios(){
         personas.get(0).agregarSuenio(sueniosLista.get(0));
         Assert.assertEquals(100,personas.get(0).getFelicidonios());
         personas.get(0).agregarSuenio(sueniosLista.get(1));
-        try {
-            personas.get(0).agregarSuenio(sueniosLista.get(2));
-        }finally {
-
-        };
+        personas.get(0).agregarSuenio(sueniosLista.get(2));
         Assert.assertEquals(200,personas.get(0).getFelicidonios());
     }
 
@@ -67,7 +63,7 @@ public class Tests {
         Assert.assertEquals(200, personas.get(0).getFelicidonios());
     }
 
-    @Test
+    @Test(expected = NoPuedeRecibirException.class)
     public void probarTiposDePersonas(){
         personas.get(0).setSuenioMasImportante(sueniosLista.get(2));
         personas.get(0).agregarSuenio(sueniosLista.get(2));

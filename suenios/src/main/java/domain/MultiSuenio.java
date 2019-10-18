@@ -7,9 +7,7 @@ public class MultiSuenio extends Suenio {
 
     @Override
     protected void cumplirParaUnaPersona(Persona persona) {
-        for (int a = 0; a < suenios.size(); a = a + 1) {
-            suenios.get(a).cumplirSuenio(persona);
-        }
+
     }
 
     @Override
