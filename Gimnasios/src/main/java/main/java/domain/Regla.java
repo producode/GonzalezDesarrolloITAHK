@@ -1,4 +1,4 @@
-package domain;
+package main.java.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,14 +10,6 @@ public class Regla {
     private List<Limite> limites = new ArrayList<Limite>();
     private List<Accion> acciones = new ArrayList<Accion>();
     private List<Usuario> usuarios = new ArrayList<Usuario>();
-<<<<<<< HEAD
-=======
-    public Regla(int id,String nombre, String descripcion){
-        this.id = id;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-    }
->>>>>>> ce453b77b7c038611d4753fbb9d6903f2a1d77e0
 
     public int getId() {
         return id;
@@ -75,13 +67,6 @@ public class Regla {
         this.usuarios.remove(usuarioEliminar);
     }
 
-<<<<<<< HEAD
-=======
-    public Regla getAll(){
-        return this;
-    }
-
->>>>>>> ce453b77b7c038611d4753fbb9d6903f2a1d77e0
 
 
 
